@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Title Page
+% LaTeX Template
+% Version 2.0 (22/7/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Peter Wilson (herries.press@earthlink.net) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% This template can be used in one of two ways:
+%
+% 1) Content can be added at the end of this file just before the \end{document}
+% to use this title page as the starting point for your document.
+%
+% 2) Alternatively, if you already have a document which you wish to add this
+% title page to, copy everything between the \begin{document} and
+% \end{document} and paste it where you would like the title page in your
+% document. You will then need to insert the packages and document 
+% configurations into your document carefully making sure you are not loading
+% the same package twice and that there are no clashes.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{book}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{nth}
+\usepackage[utf8]{inputenc}
+\usepackage{nopageno}
+\pagenumbering{gobble}
+\usepackage{afterpage}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+%booleanclaration
+\newboolean{twoside}
+\setboolean{twoside}{false}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\titleTH}{\begingroup % Create the command for including the title page in the document
+\raggedleft % Right-align all text
+\vspace*{\baselineskip} % Whitespace at the top of the page
+
+{\LARGE\bfseries animation}\\[\baselineskip] % First part of the title, if it is unimportant consider making the font size smaller to accentuate the main title
+
+{{\Huge for flutes, recorders, synthesizer, harp and harpsichord}}\\[\baselineskip] % Main title which draws the focus of the reader
+
+\vfill % Whitespace between the title block and the publisher
+
+{\large Pangur \\ \small \'Eire - \"Osterreich}  % Publisher and logo
+
+\vspace*{3\baselineskip} % Whitespace at the bottom of the page
+\endgroup}
+
+%----------------------------------------------------------------------------------------
+%	BLANK DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document} 
+
+
+\frontmatter
+\begin{titlepage}
+\begin{center}
+\pagestyle{plain} % Removes page numbers
+\titleTH % This command includes the title page
+\end{center}
+\end{titlepage}
+
+\mainmatter
+%----------------------------------------------------------------------------------------
+
+\section{Appendix}
+\begin{center}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\rfoot{\thepage}
+\pagestyle{plain}
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation-appendix.pdf}
+    \clearpage\mbox{}\clearpage
+\end{center}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+
+\section{Score}
+\begin{center}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\rfoot{\thepage}
+\pagestyle{plain}
+\begin{center}
+
+\afterpage{blankpage}
+\pagebreak
+
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation.pdf}
+\end{center}
+\end{center}
+
+
+%---------------------------------------------------------------------------------------
+
+
+\section{Parts}
+\begin{center}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\rfoot{\thepage}
+\pagestyle{plain}
+
+\afterpage{blankpage}
+\pagebreak
+
+\subsection{Flutes}
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation_part-flutes.pdf}
+\end{center}
+
+\pagebreak
+
+\subsection{Recorders}
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation_part-recorders.pdf}
+\end{center}
+
+\pagebreak
+
+\subsection{Synthesizer}
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation_part-synth.pdf}
+\end{center}
+
+\pagebreak
+
+\subsection{Harp}
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation_part-harp.pdf}
+\pagebreak
+\end{center}
+
+\subsection{Harpsichord}
+\afterpage{blankpage}
+\pagebreak
+\begin{center}
+ \includepdf[pages=-, scale=0.9, pagecommand={\thispagestyle{fancy}}]{./animation_part-cembalo.pdf}
+\end{center}
+
+
+\end{center}
+
+
+\end{document}
