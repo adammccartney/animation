@@ -117,25 +117,16 @@ instrument = ""
         
            \set Score.markFormatter = #format-mark-box-alphabet
            \override Score.RehearsalMark.font-size = #5 
-           \set Staff.barAlways = ##t
-           \set Staff.defaultBarType = "" 
+           \set Staff.defaultBarType = "|" 
            
            \context {
                      \Score
-                     \remove "Timing_translator"
-                     \remove "Default_bar_line_engraver"
-                     
                     }
   
            \context {
                      \Staff
-                     \consists "Timing_translator"
-                     \consists "Default_bar_line_engraver"
-                    % \RemoveEmptyStaves
 
-     % To use the setting globally, uncomment the following line:
 
-     \override VerticalAxisGroup #'remove-first = ##t
                     }
            
                     

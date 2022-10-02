@@ -21,7 +21,7 @@ parts: fl-tr-recorder fl-snd-cembalo cembalo flutes harp recorders synth
 
 .PHONY:
 fl-tr-recorder:
-	@ $(LY) animation_fl-tr+recorder.ly
+	@ $(LY) animation_fl-tr-recorder.ly
 
 .PHONY:
 fl-snd-cembalo:

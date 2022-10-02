@@ -47,7 +47,6 @@
     %% Ostinato
     \time 4/4
     \tempo 4 = 55
-    \mark \markup { \box 1 }
     r1 ^\markup{Piccolo} 
     \bar "|"
     r4 
@@ -117,6 +116,8 @@
     e''2 r4 \repeat tremolo 4 { es''32 g'' }  \bar "|"
     \repeat tremolo 4 { es''32 g'' } r2. \bar "|"
     
+    \mark #3
+    \barNumberCheck #42
     r4 \repeat unfold 4 { a'32[ bes' a' d''] } r4 \bar "|"
     r4 \repeat unfold 6 { g'32[ a' g' c''] } \bar "|"
     \repeat unfold 4 { g'32[ a' g' c''] } r4 \repeat tremolo 4 { e'32 f' }  \bar "|"
@@ -151,431 +152,84 @@
     r4 \repeat tremolo 12 { bes'32 c'' } \bar "|"
     \repeat tremolo 8 { bes'32 c'' } r4 \repeat tremolo 4 { a'32 c'' } \bar "|"
     \repeat tremolo 4 { a'32 c'' } r2. \bar "|"
-    
  
-    %% Section Two
-    %% Figuration additive_one
-    \tempo 4 = 110
-    \time 4/4
-    \mark \markup { \box 2 }
-    r1 
-    
-    \time 1/4
-    r4
-   
+    %% Section Three
+    %% Mod Five third down
     \time 5/8 
-    f'8[(\p a'8)] f'[( a' e'')] \bar "!"
-    f'8[( a'8)] f'[( a' e'')] \bar "!"
-    f'8[( a'8)] f'[( a' e'')] \bar "!"
-    \time 7/8
-    f'8[( a' e' a')] f'[( a' e'')] \bar "!"
-    
-    \time 5/8
-    f'8[( a')] f'[( a' e'')] \bar "!"
-    f'8[( a')] f'[( a' e'')] \bar "!"
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    \time 7/8
-    d'8[( f' c' f')] d'[( f' c'')] \bar "!"
-    
-    \time 5/8
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    \time 7/8
-    d'8[( f' c' f')] d'[( f' c'')] \bar "!"
-    
-    \time 5/8
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    \time 7/8
-    bes'8[( d'' a' d'')] bes'[( d'' a'')] \bar "!"
-    
-    \time 5/8
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    c''8[( e'')] c''[( e'' a'')] \bar "!"
-    \time 7/8
-    c''8[( e'' bes' e'')] c''[( e'' a'')] \bar "!"
-
-    \time 5/8
-    \mark #3
-    c''8[( e'')] c''[( e'' a'')] \bar "!"
-    c''8[( e'')] c''[( e'' a'')] \bar "!"
-    c''8[( e'')] c''[( e'' a'')] \bar "!"
-    \time 7/8
-    c''8[( e'' bes' e'')] c''[( e'' a'')] \bar "!"
-    
-    \time 5/8
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    \time 7/8
-    a'8[( c'' g' c'')] a'[( c'' g'')] \bar "!"
-    
-    \time 5/8
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' g'')] \bar "!"
-    \time 7/8
-    bes'8[( d'' a' d'')] bes'[( d'' g'')] \bar "!"
-    
-    \time 5/8
-    bes'8[( d'')] bes'[( d'' g'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' g'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' g'')] \bar "!"
-    \time 7/8
-    bes'8[( d'' a' d'')] bes'[( d'' g'')] \bar "!"
-    
-    %% Mod One third down
-    
-    \time 5/8 
-    a'8[( c''8)] a'[( c'' g'')] \bar "!"
-    a'8[( c''8)] a'[( c'' g'')] \bar "!"
-    a'8[( c''8)] a'[( c'' g'')] \bar "!"
-    \time 7/8
-    a'8[( c'' g' c'')] a'[( c'' g'')] \bar "!"
-    
-    \time 5/8
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
-    \time 7/8
-    f''8[( a'' e'' a'')] f''[( a'' e''')] \bar "!"
-    
-    \time 5/8
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    bes'8[( d'')] bes'[( d'' a'')] \bar "!"
-    \time 7/8
-    bes'8[( d'' a' d'')] bes'[( d'' a'')] \bar "!"
-    
-    \time 5/8
-    r4. r4 \bar "!"
-    r4. r4 \bar "!"
-    r4. r4 \bar "!"
-    \time 7/8
-    r2 r4. \bar "!"
-    
-    \pageTurn
-    \time 5/8
     \mark #4
-    b'8[( d'')] b'[( d'' a'')] \bar "!"
-    b'8[( d'')] b'[( d'' a'')] \bar "!"
-    cis''8[( e'')] cis''[( e'' a'')] \bar "!"
+    r4 e4\fp d'8-. |
+    r4 e4\fp d'8-. |
+    r4 e4\fp d'8-. |
     \time 7/8
-    cis''8[( e'' b' e'')] cis''[( e'' a'')] \bar "!"
-
-    \time 5/8
-    cis''8[( e'')] cis''[( e'' a'')] \bar "!"
-    cis''8[( e'')] cis''[( e'' a'')] \bar "!"
-    cis''8[( e'')] cis''[( e'' a'')] \bar "!"
-    \time 7/8
-    cis''8[( e'' b' e'')] cis''[( e'' a'')] \bar "!"
+    r2 e4\fp d'8-. |
     
     \time 5/8
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
+    r4 e4\fp d'8-. |
+    r4 e4\fp d'8-. |
+    r4 d4\fp g8-. |
     \time 7/8
-    f''8[( a'' e'' a'')] f''[( a'' e''')] \bar "!"
+    r2 d4\fp g8-. |
     
     \time 5/8
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
-    f''8[( a'')] f''[( a'' e''')] \bar "!"
-    g''8[( bes'')] g''[( bes'' e''')] \bar "!"
+    r4 a4\fp g'8-. |
+    r4 a4\fp g'8-. |
+    r4 a4\fp g'8-. |
     \time 7/8
-    g''8[( bes'' f'' bes'')] g''[( bes'' e''')] \bar "!"
+    r2 a4\fp g'8-. |
     
     \time 5/8
-    d''8[( f'')] d''[( f'' b'')] \bar "!"
-    d''8[( f'')] d''[( f'' b'')] \bar "!"
-    d''8[( f'')] d''[( f'' b'')] \bar "!"
+    r4 f4\fp e'8-. |
+    r4 f4\fp e'8-. |
+    r4 f4\fp e'8-. |
     \time 7/8
-    d''8[( f'' c'' f'')] d''[( f'' b'')] \bar "!"
-    
-    %% Mod Two third down
-
-    \time 5/8 
-    \instrumentSwitch "Alto Flute"
-    r4 r4. \bar "!"
-    r4 r4. \bar "!"
-    r4 r4. \bar "!"
-    \time 7/8
-    r2 r4. \bar "!"
-    
-    \time 5/8
-    bes4 ~ bes4. ~ \bar "!"
-    bes4 r4. \bar "!"
-    bes4 ~ bes4. ~ \bar "!"
-    \time 7/8
-    bes2 r4. \bar "!"
-    
-    \time 5/8
-    g4 ~ g4. ~ \bar "!"
-    g4 r4. \bar "!"
-    g4 ~ g4. ~ \bar "!"
-    \time 7/8
-    g2 r4. \bar "!"
+    r2 f4\fp e'8-. |
     
     \time 5/8
     \mark #5
-    gis4 ~ gis4. ~ \bar "!"
-    gis4 r4. \bar "!"
-    gis4 ~ gis4. ~ \bar "!"
+    r4 c4\fp c'8-. |
+    r4 c4\fp c'8-. |
+    r4 c4\fp c'8-. |
     \time 7/8
-    gis2 r4. \bar "!"
-    
-    \time 5/8
-    gis4 ~ gis4. ~ \bar "!"
-    gis4 r4. \bar "!"
-    a4 ~ a4. ~ \bar "!"
-    \time 7/8
-    a2 r4. \bar "!"
+    r2 d4\fp bes8-. |
 
     \time 5/8
-    f4 ~ f4. ~ \bar "!"
-    f4 r4. \bar "!"
-
-    f4 ~ f4. ~ \bar "!"
+    r4 d4\fp bes8-. |
+    r4 d4\fp bes8-. |
+    r4 d4\fp bes8-. |
     \time 7/8
-    f2 r4. \bar "!"
+    r2 d4\fp bes8-. |
     
     \time 5/8
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    d'8[( f')] d'[( f' c'')] \bar "!"
-    d'8[( f')] d'[( f' c'')] \bar "!"
+    r4 e4\fp c'8-. |
+    r4 e4\fp c'8-. |
+    r4 e4\fp c'8-. |
     \time 7/8
-    d'8[( f' c' f')] d'[( f' c'')] \bar "!"
+    r2 e4\fp c'8-. |
     
     \time 5/8
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    a'8[( c'')] a'[( c'' g'')] \bar "!"
-    b'8[( d'')] b'[( d'' g'')] \bar "!"
+    r4 e4\fp c'8-. |
+    r4 e4\fp c'8-. |
+    r4 f4\fp d'8-. |
     \time 7/8
-    b'8[( d'' a' d'')] b'[( d'' g'')] \bar "!"
+    r2 f4\fp d'8-. |
     
     \time 5/8
-    b'8[( d'')] b'[( d'' g'')] \bar "!"
-    b'8[( d'')] b'[( d'' g'')] \bar "!"
-    b'8[( d'')] b'[( d'' g'')] \bar "!"
+    r4 f4\fp c'8-. |
+    r4 f4\fp c'8-. |
+    r4 f4\fp c'8-. |
     \time 7/8
-    b'8[( d'' a' d'')] b'[( d'' g'')] \bar "!"
-
-    
-    %% Mod Three third down
-
-    \time 5/8
-    \instrumentSwitch "Bass Flute"
-    
-    r4 r4. \bar "!"
-    r4 r4. \bar "!"
-    r4 r4. \bar "!"
-    \time 7/8
-    r2 r4. \bar "!"
-    
-    \time 5/8
-    r4 g4.\fp \bar "!"
-    r4 g4.\fp \bar "!"
-    r4 e4.\fp \bar "!"
-    \time 7/8
-    r2 g4.\fp \bar "!"
-    
-    \pageTurn
-    \time 5/8
-    
-    r4 gis4.\fp \bar "!"
-    r4 gis4.\fp \bar "!"
-    r4 gis4.\fp \bar "!"
-    \time 7/8
-    r2 gis4.\fp \bar "!"
-    
-    \time 5/8
-    \mark #6
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    \time 7/8
-    r2 e'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 c'4.\fp \bar "!"
-    r4 c'4.\fp \bar "!"
-    r4 c'4.\fp \bar "!"
-    \time 7/8
-    r2 d'4.\fp \bar "!"
-
-    \time 5/8
-    r4 d'4.\fp \bar "!"
-    r4 d'4.\fp \bar "!"
-    r4 d'4.\fp \bar "!"
-    \time 7/8
-    r2 d'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 f'4.\fp \bar "!"
-    r4 f'4.\fp \bar "!"
-    r4 f'4.\fp \bar "!"
-    \time 7/8
-    r2 f'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 f'4.\fp \bar "!"
-    r4 f'4.\fp \bar "!"
-    r4 g'4.\fp \bar "!"
-    \time 7/8
-    r2 g'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 c'4.\fp \bar "!"
-    r4 c'4.\fp \bar "!"
-    r4 c'4.\fp \bar "!"
-    \time 7/8
-    r2 c'4.\fp \bar "!"
-    
-    
-    %% Mod Four third down
-    
-    \time 5/8 
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    \time 7/8
-    r2 e'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 gis'4.\fp \bar "!"
-    r4 gis'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    \time 7/8
-    r2 e'4.\fp \bar "!"
-    
-    \time 5/8
-    \mark #7
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    r4 e'4.\fp \bar "!"
-    \time 7/8
-    r2 e'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 a4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    \time 7/8
-    r2 a4.\fp \bar "!"
-    
-    \time 5/8
-    r4 a4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    r4 bes4.\fp \bar "!"
-    \time 7/8
-    r2 bes4.\fp \bar "!"
-
-    \time 5/8
-    r4 f'4.\fp \bar "!"
-    r4 f'4.\fp \bar "!"
-    r4 f'4.\fp \bar "!"
-    \time 7/8
-    r2 f'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 d'4.\fp \bar "!"
-    r4 d'4.\fp \bar "!"
-    r4 d'4.\fp \bar "!"
-    \time 7/8
-    r2 d'4.\fp \bar "!"
-    
-    \time 5/8
-    r4 g4.\fp \bar "!"
-    r4 g4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    \time 7/8
-    r2 a4.\fp \bar "!"
-    
-    \time 5/8
-    r4 a4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    r4 a4.\fp \bar "!"
-    \time 7/8
-    r2 a4.\fp \bar "!"
-    
-    %% Mod Five third down
-  
-    \time 5/8 
-    \mark \markup { \box 3 }
-    r4 e4\fp d'8-. \bar "!"
-    r4 e4\fp d'8-. \bar "!"
-    r4 e4\fp d'8-. \bar "!"
-    \time 7/8
-    r2 e4\fp d'8-. \bar "!"
-    
-    \time 5/8
-    r4 e4\fp d'8-. \bar "!"
-    r4 e4\fp d'8-. \bar "!"
-    r4 d4\fp g8-. \bar "!"
-    \time 7/8
-    r2 d4\fp g8-. \bar "!"
-    
-    \time 5/8
-    r4 a4\fp g'8-. \bar "!"
-    r4 a4\fp g'8-. \bar "!"
-    r4 a4\fp g'8-. \bar "!"
-    \time 7/8
-    r2 a4\fp g'8-. \bar "!"
-    
-    \time 5/8
-    r4 f4\fp e'8-. \bar "!"
-    r4 f4\fp e'8-. \bar "!"
-    r4 f4\fp e'8-. \bar "!"
-    \time 7/8
-    r2 f4\fp e'8-. \bar "!"
-    
-    \time 5/8
-    r4 c4\fp c'8-. \bar "!"
-    r4 c4\fp c'8-. \bar "!"
-    r4 c4\fp c'8-. \bar "!"
-    \time 7/8
-    r2 d4\fp bes8-. \bar "!"
-
-    \time 5/8
-    r4 d4\fp bes8-. \bar "!"
-    r4 d4\fp bes8-. \bar "!"
-    r4 d4\fp bes8-. \bar "!"
-    \time 7/8
-    r2 d4\fp bes8-. \bar "!"
-    
-    \time 5/8
-    r4 e4\fp c'8-. \bar "!"
-    r4 e4\fp c'8-. \bar "!"
-    r4 e4\fp c'8-. \bar "!"
-    \time 7/8
-    r2 e4\fp c'8-. \bar "!"
-    
-    \time 5/8
-    r4 e4\fp c'8-. \bar "!"
-    r4 e4\fp c'8-. \bar "!"
-    r4 f4\fp d'8-. \bar "!"
-    \time 7/8
-    r2 f4\fp d'8-. \bar "!"
-    
-    \time 5/8
-    r4 f4\fp c'8-. \bar "!"
-    r4 f4\fp c'8-. \bar "!"
-    r4 f4\fp c'8-. \bar "!"
-    \time 7/8
-    r2 f4\fp c'8-. \bar "!"
+    r2 f4\fp c'8-. |
 
     
     \time 2/4
-    r2\fermata \bar "!"
+    r2\fermata |
   
     
     \time 4/4
     \tempo 4 = 80
     \clef bass
     \break
-    \mark \markup { \box 4 }
+    \mark #6
     r1 \bar "|" 
     %%Repeat One
     
@@ -593,7 +247,8 @@
     es1\!\pp \bar"|"
     
     %%Repeat Two
-    \mark #8
+    \mark #7
+    \barNumberCheck 116
     r2 cis2\fp\> ~ \bar"|"
     cis1\!\pp \bar"|"
     r2 cis2\fp\> ~ \bar"|"
@@ -608,7 +263,7 @@
     es1\!\pp \bar"|"
     
     %%Repeat Three
-    \mark #9
+    \mark #8
     r2 cis2\fp\> ~ \bar"|"
     cis1\!\pp \bar"|"
     r2 cis2\fp\> ~ \bar"|"
@@ -623,7 +278,7 @@
     es1\!\pp \bar"|"
     
     %%Repeat Four
-    \mark #10
+    \mark #9
     r2 cis2\fp\> ~ \bar"|"
     cis1\!\pp \bar"|"
     r2 cis2\fp\> ~ \bar"|"
@@ -638,7 +293,8 @@
     es1\!\pp \bar"|"
     
     %%Repeat Five
-    \mark #11
+    \mark #10
+    \barNumberCheck #152
     r2 cis2\fp\> ~ \bar"|"
     cis1\!\pp \bar"|"
     r2 cis2\fp\> ~ \bar"|"
