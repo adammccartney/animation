@@ -23,8 +23,8 @@ instrument = ""
   %ragged-right = ##f
   %ragged-last = ##f
   
-  min-systems-per-page = #3
-  max-systems-per-page = #12
+  min-systems-per-page = #2
+  max-systems-per-page = #3
   system-system-spacing.padding = #15  %fit staves closer together
   system-system-spacing.stretchability = #15  %how flexible the spacing is
 
