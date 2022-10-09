@@ -1,0 +1,2 @@
+@image{snippet2-1}
+@c eof

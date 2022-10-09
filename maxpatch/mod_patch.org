@@ -1,0 +1,76 @@
+Below is a directed graph representing the modular synth patch used to create
+samples.
+
+#+begin_src dot :file mod_patch.png
+
+  digraph {
+     kbd_pitch [label = "keyboad pitch"]
+     kbd_gate  [label = "keyboard gate"]
+     osc1 [label = "osc->rubicon"] 
+     osc2 [label = "osc->dixieII"]
+     off_att [label = "off/att->maths3,4"]
+     lpf1 [label = "lpf->morgasmatron A"]
+     lpf2 [label = "lpf->morgasmatron B"]
+     lpf3 [label = "lpf->ripples"]
+     mix [label = "mix->doepfer4ch"]
+     mmix [label = "mix->morgasmatron"]
+     vca1 [label = "vca->happy nerding1"]
+     vca2 [label = "vca->happy nerding2"]
+     es8_adc1 [label = "d/w->reverb_valhalla"]
+     es8_adc2 [label = "clock divider"]
+     es8_adc4 [label = "main mono out"]
+     vca1 [label = "vca->happy nerding 1"]
+     vca3 [label = "vca->doepfer lin"]
+     vca4 [label = "vca->doepfer lin"]
+     eg1_amp [label = "eg->maths 1"]
+     eg2_filt [label = "eg->maths 4"]
+     eg3_filt [label = "eg->erica synths"]
+
+     # pitch
+     kbd_pitch -> osc1
+     kbd_pitch -> off_att
+     kbd_pitch -> osc2   
+     osc1_sin -> osc2_sync
+     osc1 -> osc1_sub
+     osc1 -> osc1_saw
+     osc1 -> osc1_sin
+     osc1_sub -> mix
+     osc1_saw -> mix
+     osc2 -> osc2_saw
+     osc2 -> osc2_sq
+     osc2_saw -> mix
+     osc2_sq  -> mix
+     osc2_tri -> lpf2
+     lpf2 -> mmix
+     lpf1 -> mmix   
+     mmix -> vca2
+     mix -> vca1
+     vca1 -> lpf1
+     vca2 -> es8_adc1
+     es8_adc1 -> es8_dac7
+     es8_dac7 -> vca3
+     vca3 -> lpf3
+     lpf3 -> es8_adc4
+
+     #rhythm
+     kbd_gate -> eg1_amp
+     kbd_gate -> eg2_filt
+     eg1_amp -> es8_adc2
+     eg1_amp -> vca1
+     eg1_amp -> lpf2
+     off_att -> lpf1 
+
+     eg2_filt -> lpf1
+     eg2_filt -> lpf3
+
+     es8_adc2 -> es8_dac8
+     es8_dac8 -> eg3_filt
+     eg3_filt -> vca4
+     vca4 -> vca3
+  }
+
+
+#+end_src
+
+#+RESULTS:
+[[file:mod_patch.png]]
